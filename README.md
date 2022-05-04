@@ -4,7 +4,7 @@ Today we’ll be experimenting how to send event via a javascript SDK to a Data 
 
 Prerequisites:
 
-- A website hosted with a Domain name (you can create a free one using w3spaces.com)
+- A website hosted with a Domain name (you can create a free one using www.w3schools.com
 - A RudderStack free trial account
 - A GCP free trial account
 - A google analytics account
