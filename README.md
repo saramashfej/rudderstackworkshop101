@@ -24,7 +24,7 @@ The first pipeline we’ll set up is going to be an Event Stream pipeline, this 
 Now that we have set up our source in RudderStack, we’ll have to add the piece of code to our website that lets us create a connection to RudderStack and also start sending events to our destinations. 
 
 1. Copy the following snippet, then paste it into the head node of your .html code in your website. 
-```
+```html
   
 <script>
 rudderanalytics = window.rudderanalytics = [];
