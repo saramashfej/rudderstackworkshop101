@@ -102,3 +102,5 @@ Now that we have seen how to send the data to a Cloud Warehouse to visualize the
 9. Once your stream is created, you’ll get a Measurement ID, make note of that since you will be using it to set up your destination connection in RudderStack
 10. Switch back to RudderStack in your browser. On the Destinations tab on the left select the GA4 option, and name your destination. 
 11. In the Destination configuration settings, you’ll need to enter your measurement ID.
+12. For the rest of the seetings, you can keep the defaults. Under Native SDK, make sure you enable the option to send User ID to GA, and also to extend page view property.
+13. Go back to Google Analytics 4, Click on report under home in the Admin panel then click on real-time. Here, you should start seeing the page events coming in along with any events GA4 will capture. 
