@@ -93,6 +93,7 @@ Now that we have seen how to send the data to a Cloud Warehouse to visualize the
 
 1. In your browser, enter [analytics.google.com](http://analytics.google.com) and sign in with your work account.
 2. In the bottom left corner, you’ll find a gear symbol, click there to open up the admin portal. 
+![img1](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot1.png)
 3. If you haven’t already created an account, create one now.
 4. If you have created an account, click on “+ Click Property”. Name your property, select your time zone then answer questions about your business. When done, click on “Create”
 5. Now that the property is created, within the Property column you’ll see a setting for Data streams, click on that.
@@ -104,3 +105,5 @@ Now that we have seen how to send the data to a Cloud Warehouse to visualize the
 11. In the Destination configuration settings, you’ll need to enter your measurement ID.
 12. For the rest of the seetings, you can keep the defaults. Under Native SDK, make sure you enable the option to send User ID to GA, and also to extend page view property.
 13. Go back to Google Analytics 4, Click on report under home in the Admin panel then click on real-time. Here, you should start seeing the page events coming in along with any events GA4 will capture. 
+
+
