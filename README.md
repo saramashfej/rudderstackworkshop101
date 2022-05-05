@@ -15,7 +15,7 @@ The first pipeline we’ll set up is going to be an Event Stream pipeline, this 
 
 1. Once you login to rudderstack.com, sign in with your company email you will start seeing the RudderStack homepage. 
 2. Note the Sources, Destinations as well as the data plane details in the top right corner of the page. The Data Plane URL is something you will need to copy somewhere to save as you will be using it in later steps, it should look something like this **https://yourcompanyname.dataplane.rudderstack.com**
-3. Click on “+ Add Source”, you can either have search for Javascript in the search fiel, or select the Javascript source from the **Popular** section.
+3. Click on “+ Add Source”, you can either have search for Javascript in the search field, or select the Javascript source from the **Popular** section.
 4. Name your source, make sure to use meaningful names if you plan to add more  javascript sources later on. 
 5. Once that is created, a page will appear with all your source details. On the right hand side, you should be able to find your **write key**, take note of that because you will be needing that along side your **data plane URL**. 
 
