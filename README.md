@@ -27,35 +27,35 @@ Now that we have set up our source in RudderStack, we’ll have to add the piece
 ```html
   
 <script>
-rudderanalytics = window.rudderanalytics = [];
-var methods = [
-"load",
-"page",
-"track",
-"identify",
-"alias",
-"group",
-"ready",
-"reset",
-"getAnonymousId",
-"setAnonymousId",
-];
-for (var i = 0; i < methods.length; i++) {
-var method = methods[i];
-rudderanalytics[method] = (function (methodName) {
-return function () {
-rudderanalytics.push(
-[methodName].concat(Array.prototype.slice.call(arguments))
-);
-};
-})(method);
-}
+  rudderanalytics = window.rudderanalytics = [];
+  var methods = [
+    "load",
+    "page",
+    "track",
+    "identify",
+    "alias",
+    "group",
+    "ready",
+    "reset",
+    "getAnonymousId",
+    "setAnonymousId",
+  ];
+  for (var i = 0; i < methods.length; i++) {
+    var method = methods[i];
+    rudderanalytics[method] = (function (methodName) {
+      return function () {
+        rudderanalytics.push(
+          [methodName].concat(Array.prototype.slice.call(arguments))
+        );
+      };
+    })(method);
+  }
 
-rudderanalytics.load(<WRITE_KEY>, <DATA_PLANE_URL>);
-rudderanalytics.page();
+  rudderanalytics.load(<WRITE_KEY>, <DATA_PLANE_URL>);
+  rudderanalytics.page();
 </script>
 
-<script src="[https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js](https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js)"></script>
+<script src="https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js"></script>
 
  ```
 b. Note where it says <WRITE_KEY> and <DATA_PLANE_URL>, you’ll need to replace those with the details you copied in Steps 1.b and 1.e. You will notice here that we are calling two methods:
