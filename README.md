@@ -63,7 +63,7 @@ b. Note where it says <WRITE_KEY> and <DATA_PLANE_URL>, you’ll need to replace
 1. The **load()** method will set up and establish a connection to the Source you’ve configured in RudderStack earlier.
 2. The **page()** method will capture page details, you have the option of removing this or adding different methods to capture different types of user information. We will see examples of that later on.
 
-Now, we have set up our connection. Click on Run to apply those changes to your website.
+Now, we have set up our connection. Make sure to apply those changes to your website.
 
 **Step 3. Verifying your Source connection:**
 
