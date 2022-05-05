@@ -7,7 +7,7 @@ Prerequisites:
 - A website hosted with a Domain name (you can create a free one using www.w3schools.com)
 - A RudderStack free trial account
 - A GCP free trial account
-- A google analytics account
+- A Google analytics account
 
 The first pipeline we’ll set up is going to be an Event Stream pipeline, this type of pipeline enables us to use the RudderStack SDK to send events from a website, web app or mobile app to either a Cloud warehouse or a downstream application, while optionally applying transformations. 
 
