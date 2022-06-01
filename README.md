@@ -63,7 +63,7 @@ Now that we have set up our source in RudderStack, we’ll have to add the piece
 <script src="https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js"></script>
 
  ```
-b. Note where it says <WRITE_KEY> and <DATA_PLANE_URL>, you’ll need to replace those with the details you copied in Steps 1.b and 1.e. You will notice here that we are calling two methods:
+b. Note where it says <WRITE_KEY> and <DATA_PLANE_URL>, you’ll need to replace those with the details you copied in Steps 1.b and 1.e. (make sure you replace the brackets <> with quotations "") You will notice here that we are calling two methods:
 
 1. The **load()** method will set up and establish a connection to the Source you’ve configured in RudderStack earlier.
 2. The **page()** method will capture page details, you have the option of removing this or adding other methods to capture different types of user information. 
