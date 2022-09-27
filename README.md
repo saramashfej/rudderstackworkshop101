@@ -123,11 +123,11 @@ It's important here to distinguish with the two connection modes that the Google
 9. Once your stream is created, you’ll get a Measurement ID, make note of that since you will be using it to set up your destination connection in RudderStack
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot3.png)
-10. You will also need the Measurement Protocol APi to use later with cloud mode, make sure to keep note of that too. 
+10. You will also need the Measurement Protocol API secret to use later with cloud mode, make sure to keep note of that too. 
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot12.png)
 
-10. Switch back to RudderStack in your browser. On the Destinations tab on the left select the GA4 option, and name your destination (tip: add a suffix to help you identify cloud mode vs device destinations, example "GA4 Destination - device mode") 
+11. Switch back to RudderStack in your browser. On the Destinations tab on the left select the GA4 option, and name your destination (tip: add a suffix to help you identify cloud mode vs device destinations, example "GA4 Destination - device mode") 
 
 Device mode:
 
@@ -141,10 +141,17 @@ Device mode:
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot11.png)
 
-13. Go back to Google Analytics 4, Click on "Reports" under home in the menu on the left. You can view an overall Reports snapshot of the events being captured from your site. 
-14. Click on Real time under Reports snapshot. Here, you should start seeing the page events coming in along with any events GA4 will capture. 
+14. Go back to Google Analytics 4, Click on "Reports" under home in the menu on the left. You can view an overall Reports snapshot of the events being captured from your site. 
+15. Click on Real time under Reports snapshot. Here, you should start seeing the page events coming in along with any events GA4 will capture. 
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot5.png)
 
 Cloud mode: 
-12. 
+
+12. In the Destination configuration settings, you’ll need to enter a few things:
+ - Your Measurement ID.
+ - Whether you are using gtag.js or Firebase, if you are using a web client it is likely that wll be gtag.js
+ - API Secret: which is what you would have gotten in step 10. 
+ That's all you need to set things up in cloud mode, with cloud mode you can check the live events viewer to make sure the events are being sent to the Measurement protocol API and to your GA4 Dashboard. (note: Live events viewer is not available in device mode)
+
+![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot13.png)
