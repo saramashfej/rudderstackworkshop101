@@ -123,18 +123,28 @@ It's important here to distinguish with the two connection modes that the Google
 9. Once your stream is created, you’ll get a Measurement ID, make note of that since you will be using it to set up your destination connection in RudderStack
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot3.png)
+10. You will also need the Measurement Protocol APi to use later with cloud mode, make sure to keep note of that too. 
+
+![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot12.png)
 
 10. Switch back to RudderStack in your browser. On the Destinations tab on the left select the GA4 option, and name your destination (tip: add a suffix to help you identify cloud mode vs device destinations, example "GA4 Destination - device mode") 
 
-Device Mode:
+Device mode:
+
 12. In the Destination configuration settings, you’ll need to enter a few things:
  - Your Measurement ID.
  - Whether you are using gtag.js or Firebase, if you are using a web client it is likely that wll be gtag.js
-14. Under Native SDK, make sure you enable the option to send User ID to GA, and also to extend page view property. 
-15. Under Web SDK Settings, make sure to toggle on the "Use device-mode to send events". This is what creates this integration as a device mode connection. 
+
+![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot10.png)
+
+13. Under Web SDK Settings, make sure to toggle on the "Use device-mode to send events". This is what creates this integration as a device mode connection. 
+
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot11.png)
 
 13. Go back to Google Analytics 4, Click on "Reports" under home in the menu on the left. You can view an overall Reports snapshot of the events being captured from your site. 
 14. Click on Real time under Reports snapshot. Here, you should start seeing the page events coming in along with any events GA4 will capture. 
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot5.png)
+
+Cloud mode: 
+12. 
