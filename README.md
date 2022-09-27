@@ -16,13 +16,13 @@ The first pipeline we’ll set up is going to be an Event Stream pipeline, this 
 1. Once you login to rudderstack.com, sign in with your company email you will start seeing the RudderStack homepage. 
 2. Note the Sources, Destinations and Data plane details in the top right corner of the page. The Data Plane URL is something you will need to copy somewhere to save as you will be using it in later steps, it should look something like this **https://yourcompanyname.dataplane.rudderstack.com**
 
-![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot6.png)
+![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot6 - new.png)
 
 3. Click on “+ Add Source” next to Sources, you can either search for Javascript in the search field, or select the Javascript source from the **Popular** section.
 4. Name your source, make sure to use meaningful names with proper naming conventions that describe the envrionement like prod/dev, especially if you plan to add more javascript sources later on. 
 5. Once that is created, a page will appear with all your source details and how to setup the SDK in your website.
 
-![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot7.png)
+![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot7 - new.png)
 
 ## **Step 2:** **Installing the RudderStack Javascript SDK:**
 
