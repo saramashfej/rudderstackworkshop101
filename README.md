@@ -90,7 +90,7 @@ Now that we set up our source and verified that we can receive events, we need t
 
 1. In the same Source page that we created, click on “Add Destination” within the blue button, then select create new destination.
 2. Choose BigQuery from the list of destinations, then click continue.
-3. Name your destination.
+3. Name your destination 
 4. Follow the steps in this doc to set up your BigQuery destination https://www.rudderstack.com/docs/data-warehouse-integrations/google-bigquery/, you will need to setup a GCP bucket as a staging area and add the necessary permission in GCP for RudderStack to be able to access it. 
 5. After creating the BigQuery destination, similarly you should be able to select the destination from the Destinations tab in RudderStack and from there check the “Live Events” to see if the stream has been successful. 
 6. Head to your BigQuery instance in GCP and take a look at the tables. You should be able to see a new dataset was created with the same name of the Source, or whatever name you specified for your Namespace in the Destination settings. 
@@ -101,6 +101,10 @@ Now that we set up our source and verified that we can receive events, we need t
 **2. Google Analytics 4**
 
 Now that we have seen how to send the data to a Cloud Warehouse to visualize the data into table, run queries on the data and create customer profiles, let’s look at how we can stream data into different tool like GA4 to extract key marketing insights:
+
+It's important here to distinguish with the two connection modes that the Google Analytics 4 destination in RudderStack now supports:
+- Cloud mode: with the cloud mode, we are making HTTP calls to the Measurement protocol, this is useful in scenarios when we want to enable interaction from any source, including offline sources. However, this type of connection doesn't support all features like capturing geolocation. 
+- Device mode: This is loading the gtag.js directly on our website, here we get real time data reporting as well as the full range of capabilities that GA4 has.  
 
 1. In your browser, enter [analytics.google.com](http://analytics.google.com) and sign in with your work account.
 2. In the bottom left corner, you’ll find a gear symbol, click there to open up the admin portal. 
@@ -120,10 +124,14 @@ Now that we have seen how to send the data to a Cloud Warehouse to visualize the
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot3.png)
 
-10. Switch back to RudderStack in your browser. On the Destinations tab on the left select the GA4 option, and name your destination. 
-11. In the Destination configuration settings, you’ll need to enter your measurement ID.
-12. Under Native SDK, make sure you enable the option to send User ID to GA, and also to extend page view property. For the rest of the seetings, you can keep the defaults. 
+10. Switch back to RudderStack in your browser. On the Destinations tab on the left select the GA4 option, and name your destination (tip: add a suffix to help you identify cloud mode vs device destinations, example "GA4 Destination - device mode") 
 
+Device Mode:
+12. In the Destination configuration settings, you’ll need to enter a few things:
+ - Your Measurement ID.
+ - Whether you are using gtag.js or Firebase, if you are using a web client it is likely that wll be gtag.js
+14. Under Native SDK, make sure you enable the option to send User ID to GA, and also to extend page view property. 
+15. Under Web SDK Settings, make sure to toggle on the "Use device-mode to send events". This is what creates this integration as a davice mode connection. 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot4.png)
 
 13. Go back to Google Analytics 4, Click on "Reports" under home in the menu on the left. You can view an overall Reports snapshot of the events being captured from your site. 
