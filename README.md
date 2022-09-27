@@ -131,8 +131,8 @@ Device Mode:
  - Your Measurement ID.
  - Whether you are using gtag.js or Firebase, if you are using a web client it is likely that wll be gtag.js
 14. Under Native SDK, make sure you enable the option to send User ID to GA, and also to extend page view property. 
-15. Under Web SDK Settings, make sure to toggle on the "Use device-mode to send events". This is what creates this integration as a davice mode connection. 
-![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot4.png)
+15. Under Web SDK Settings, make sure to toggle on the "Use device-mode to send events". This is what creates this integration as a device mode connection. 
+![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot11.png)
 
 13. Go back to Google Analytics 4, Click on "Reports" under home in the menu on the left. You can view an overall Reports snapshot of the events being captured from your site. 
 14. Click on Real time under Reports snapshot. Here, you should start seeing the page events coming in along with any events GA4 will capture. 
