@@ -19,8 +19,8 @@ The first pipeline we’ll set up is going to be an Event Stream pipeline, this 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot6.png)
 
 3. Click on “+ Add Source” next to Sources, you can either search for Javascript in the search field, or select the Javascript source from the **Popular** section.
-4. Name your source, make sure to use meaningful names if you plan to add more javascript sources later on. 
-5. Once that is created, a page will appear with all your source details. On the right hand side, you should be able to find your **write key**, take note of that because you will be needing that along side your **data plane URL**. 
+4. Name your source, make sure to use meaningful names with proper naming conventions that describe the envrionement like prod/dev, especially if you plan to add more javascript sources later on. 
+5. Once that is created, a page will appear with all your source details and how to setup the SDK in your website.
 
 ![img](https://github.com/saramashfej/rudderstackworkshop101/blob/main/Screenshot7.png)
 
