@@ -28,7 +28,7 @@ The first pipeline we’ll set up is going to be an Event Stream pipeline, this 
 
 Now that we have set up our source in RudderStack, we’ll have to add the piece of code to our website that lets us create a connection to RudderStack and also start sending events to our destinations. 
 
-1. Copy the following snippet, then paste it into the head node of your .html code in your website. 
+1. In the Setup tab (see abve screenshot) we'll see a code snippet with the write key and Data plan URL already within it, copy the snippet, then paste it into the head node of your .html code in your website. The minified version of the snippet is the following:
 ```html
   
 <script>
@@ -63,7 +63,7 @@ Now that we have set up our source in RudderStack, we’ll have to add the piece
 <script src="https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js"></script>
 
  ```
-b. Note where it says <WRITE_KEY> and <DATA_PLANE_URL>, you’ll need to replace those with the details you copied in Steps 1.b and 1.e. (make sure you replace the brackets <> with quotations "") You will notice here that we are calling two methods:
+b. Notice here the two types of methods that are being called:
 
 1. The **load()** method will set up and establish a connection to the Source you’ve configured in RudderStack earlier.
 2. The **page()** method will capture page details, you have the option of removing this or adding other methods to capture different types of user information. 
@@ -84,7 +84,7 @@ Now that we have set up our connection, we want to verify that RudderStack is ab
 
 ## **Step 4. Set up the destination:**
 
-**1. Cloud Warehouse (Google BigQuery):** 
+**1. Cloud Data Warehouse (Google BigQuery):** 
 
 Now that we set up our source and verified that we can receive events, we need to set up our destination that we want the events to be sent to. The first destination we’ll set up is to a Cloud Warehouse which will be Google BigQuery for this tutorial.
 
