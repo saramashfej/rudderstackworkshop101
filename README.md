@@ -1,4 +1,4 @@
-# **RudderStack 101 Workshop**
+# **Getting Started with RudderStack**
 
 Today we’ll be experimenting how to send event via a javascript SDK to a Data Warehouse and another Downstream application like Google Analytics 4. 
 
